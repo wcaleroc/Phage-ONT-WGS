@@ -1,0 +1,10 @@
+# Entorno: phage-tax
+name: phage-tax
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - taxmyphage
+  - mash
+  - blast

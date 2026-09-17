@@ -1,0 +1,11 @@
+# Entorno: phage-polish
+name: phage-polish
+channels:
+  - conda-forge
+  - nanoporetech
+  - bioconda
+  - defaults
+dependencies:
+  - medaka
+# Nota: medaka presenta conflictos de dependencias conocidos.
+# Alternativa: python -m venv medaka_venv && pip install medaka

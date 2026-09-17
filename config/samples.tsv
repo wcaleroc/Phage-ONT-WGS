@@ -1,0 +1,5 @@
+# Procesamiento por lotes: una fila por muestra.
+# Uso: bash run_all.sh --batch config/samples.tsv
+sample	barcode	genome_size_bp	notas
+F6	barcode01	29000	Berlinvirus, Salmonella Infantis
+F14	barcode02	59000	Chivirus, Salmonella Infantis

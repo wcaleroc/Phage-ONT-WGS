@@ -1,0 +1,17 @@
+# Entorno: phage-qc
+name: phage-qc
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - nanoplot
+  - nanocomp
+  - seqkit
+  - chopper
+  - rasusa
+  - filtlong
+  - minimap2
+  - samtools
+  - mosdepth
+  - pigz

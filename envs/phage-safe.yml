@@ -1,0 +1,11 @@
+# Entorno: phage-safe
+name: phage-safe
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - ncbi-amrfinderplus
+  - kraken2
+  - bacphlip
+  - abricate

@@ -1,0 +1,8 @@
+# Entorno: phage-phold
+name: phage-phold
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - phold

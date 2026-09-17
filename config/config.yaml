@@ -1,0 +1,53 @@
+# =============================================================================
+# config.yaml — configuración del pipeline phage-ont-wgs
+# Editar únicamente este archivo. Los scripts no contienen rutas codificadas.
+# =============================================================================
+
+# ---------- Proyecto ----------
+project: /ruta/a/su/proyecto_fagos
+sample: F6
+barcode: barcode01
+threads: 16
+
+# ---------- Datos de entrada ----------
+# pod5_dir: solo si parte de señal cruda. Si ya tiene FASTQ, deje fastq_in.
+pod5_dir: /ruta/a/pod5
+fastq_in:
+
+# ---------- Química y modelo ----------
+# Verificar con: grep -iE "flow_cell|kit" final_summary_*.txt
+flowcell: FLO-MIN114
+kit: SQK-NBD114.24
+dorado_model: dna_r10.4.1_e8.2_400bps_sup@v5.2.0
+dorado_bin: /ruta/a/dorado/bin/dorado
+
+# ---------- Genoma esperado ----------
+# Rango típico de Caudoviricetes: 30-200 kb. Ajustar al género esperado.
+genome_size: 45k
+genome_size_bp: 45000
+
+# ---------- Filtrado y submuestreo ----------
+min_qscore: 10
+min_length: 1000
+target_coverage: 100
+subsample_seed: 42
+
+# ---------- Umbrales de calidad ----------
+# cov_pass / cov_warn: cobertura media del ensamblaje
+cov_pass: 60
+cov_warn: 30
+mapped_pass: 90
+mapped_warn: 75
+expected_contigs: 1
+
+# ---------- Bases de datos ----------
+db_pharokka: /ruta/a/databases/pharokka
+db_phold: /ruta/a/databases/phold
+db_checkv: /ruta/a/databases/checkv-db-v1.5
+db_taxmyphage: /ruta/a/databases/taxmyphage
+db_kraken2: /ruta/a/databases/kraken2
+
+# ---------- Opciones ----------
+use_phold: true          # anotación estructural (recomendada, requiere GPU idealmente)
+use_kraken: true         # cribado de contaminación
+polisher: medaka         # medaka | dorado

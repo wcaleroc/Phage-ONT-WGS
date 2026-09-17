@@ -1,0 +1,8 @@
+# Entorno: phage-annot
+name: phage-annot
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - pharokka

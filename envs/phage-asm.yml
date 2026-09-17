@@ -1,0 +1,9 @@
+# Entorno: phage-asm
+name: phage-asm
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - flye=2.9.6
+  - bandage

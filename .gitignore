@@ -1,0 +1,28 @@
+# Datos
+*.pod5
+*.fast5
+*.fastq
+*.fastq.gz
+*.bam
+*.bai
+*.sam
+databases/
+results/
+logs/
+scratch/
+
+# Configuración local
+config/mi_*.yaml
+config/*_local.yaml
+
+# Entornos
+.conda/
+*.pyc
+__pycache__/
+
+# Centinelas
+.done
+
+# Sistema
+.DS_Store
+*.swp

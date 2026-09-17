@@ -1,0 +1,10 @@
+# Entorno: phage-qual
+name: phage-qual
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - checkv
+  - dnaapler
+  - quast
