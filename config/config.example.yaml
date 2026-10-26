@@ -1,0 +1,36 @@
+# Generic template only. Validate against the parser used by the current pipeline
+# before adoption; this file is not yet wired into the existing run_all.sh.
+project:
+  id: example_project
+  output_dir: results
+  work_dir: work
+
+inputs:
+  # Use a manifest rather than hard-coded personal paths.
+  sample_manifest: config/samples.example.tsv
+  input_type: fastq  # fastq | pod5 (only if basecalling is implemented here)
+  input_dir: data  # local path; do not commit input data
+
+execution:
+  threads: 4
+  # Set only after checking the actual CEDIA SLURM configuration.
+  slurm_profile: null
+
+filters:
+  # Placeholder; exact filters must match the audited scripts.
+  min_read_length: null
+
+assembly:
+  tool: flye
+  mode: null  # must be selected for actual read type/quality
+  genome_size: null
+
+annotation:
+  pharokka_database: null
+  checkv_database: null
+  phold_database: null
+
+provenance:
+  record_versions: true
+  record_commands: true
+  record_database_versions: true

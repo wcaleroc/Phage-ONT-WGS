@@ -1,0 +1,2 @@
+sample_id	input_path	input_type	barcode	metadata_file
+example_sample	/path/to/reads.fastq.gz	fastq	NA	NA
