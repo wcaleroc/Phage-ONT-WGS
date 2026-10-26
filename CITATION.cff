@@ -7,6 +7,8 @@ authors:
     given-names: William Ricardo
     affiliation: Universidad Técnica de Ambato
     email: wr.calero@uta.edu.ec
+  - family-names: Pacheco-Balarezo
+    given-names: Camila
 repository-code: https://github.com/wcaleroc/phage-ont-wgs
 license: MIT
 version: 1.0.0
