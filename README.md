@@ -195,4 +195,4 @@ When publishing results generated with this workflow, report the relevant softwa
 
 This repository provides an organized starting point for an ONT bacteriophage genome analysis workflow. Documentation and metadata templates support reproducibility, but complete end-to-end validation must be established using actual execution records from the target HPC environment.
 
-Workflow stages should be described as validated only when supported by appropriate evidence.
+Workflow stages should be described as validated only when supported by appropriate evidence.  
