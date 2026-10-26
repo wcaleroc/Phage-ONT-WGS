@@ -1,13 +1,13 @@
 cff-version: 1.2.0
 title: phage-ont-wgs
-message: Pipeline para ensamblaje y caracterización de genomas de bacteriófagos con datos Oxford Nanopore
+message: Please cite this software as follows.
 type: software
 authors:
   - family-names: Calero-Cáceres
     given-names: William Ricardo
     affiliation: Universidad Técnica de Ambato
     email: wr.calero@uta.edu.ec
-repository-code: https://github.com/TU_USUARIO_GITHUB/phage-ont-wgs
+repository-code: https://github.com/wcaleroc/phage-ont-wgs
 license: MIT
 version: 1.0.0
 date-released: 2026-09-10
